@@ -3,10 +3,11 @@ import Box from './components/Box';
 
 export default function App() {
   return (
+    // <View style={{backgroundColor:"plum", flex: 1}}></View>
     <View style={styles.container}>
-      <Box style={{backgroundColor: "#8e9b90"}}>Box 1</Box>
-      <Box style={{backgroundColor: "#b69b30"}}>Box 2</Box>
-      <Box style={{backgroundColor: "#1c9b00"}}>Box 3</Box>
+      <Box style={{backgroundColor: "#8e9b90",flex: 1}}>Box 1</Box>
+      <Box style={{backgroundColor: "#b69b30", flex: 1}}>Box 2</Box>
+      <Box style={{backgroundColor: "#1c9b00", flex: 3}}>Box 3</Box>
       <Box style={{backgroundColor: "#ab3b00"}}>Box 4</Box>
       <Box style={{backgroundColor: "#b99b00"}}>Box 5</Box>
       <Box style={{backgroundColor: "#8e9b00"}}>Box 6</Box>
@@ -15,8 +16,11 @@ export default function App() {
   );
 }
 
+// flex: 1 takes entire available item, flex:3 takes three time bigger in case of flex items/child
+
 const styles = StyleSheet.create({
   container: {
+    flex:1,
     marginTop:64,
     borderWidth: 6,
     borderColor: "red",
