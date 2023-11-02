@@ -16,14 +16,14 @@ export default function App() {
   );
 }
 
-// flex: 1 takes entire available item, flex:3 takes three time bigger in case of flex items/child
+// alignItems: "stretch", each box stretch from left to right
 
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    // flexDirection:"row-reverse",
-    flexDirection:"row",
-    justifyContent: "space-around",
+    // flexDirection:"row",
+    justifyContent: "center",
+    alignItems: "center",
     marginTop:64,
     borderWidth: 6,
     borderColor: "red",
